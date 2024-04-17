@@ -1,0 +1,47 @@
+Tarea de Estructuras de Datos: Implementación de Algoritmos de Ordenamiento 
+
+Objetivo: El objetivo de esta tarea es que los alumnos implementen y comparen varios algoritmos de ordenamiento básicos: Burbuja, Selección, Inserción y Shell. 
+
+Instrucciones: 
+
+Implementación de Algoritmos: 
+
+Cada estudiante debe implementar los siguientes algoritmos de ordenamiento en el lenguaje de programación de su elección (preferiblemente aquel con el que estén más familiarizados):
+
+
+Burbuja (Bubble Sort) 
+Selección (Selection Sort) 
+Inserción (Insertion Sort) 
+Shell (Shell Sort) 
+
+
+
+Estructura del Código: 
+
+Cada implementación debe estar contenida en una función separada. 
+
+El código debe ser claro y bien comentado para facilitar su comprensión. 
+
+
+
+Pruebas y Ejemplos: 
+
+Después de implementar cada algoritmo, los estudiantes deben probarlos con diferentes conjuntos de datos, incluyendo: 
+
+Conjuntos pequeños (por ejemplo, 10 elementos) 
+Conjuntos medianos (por ejemplo, 100 elementos) 
+Conjuntos grandes (por ejemplo, 1000 elementos) 
+
+
+Los estudiantes deben registrar el tiempo de ejecución de cada algoritmo para cada conjunto de datos y compararlos. 
+Análisis Comparativo: 
+
+Después de realizar las pruebas, los estudiantes deben escribir un informe breve que incluya: 
+
+Una descripción de cada algoritmo implementado. 
+
+Resultados de las pruebas, incluyendo los tiempos de ejecución para cada algoritmo y conjunto de datos. 
+
+Una comparación de la eficiencia de los algoritmos en términos de tiempo de ejecución. 
+
+Conclusiones sobre qué algoritmo es más eficiente en diferentes situaciones y por qué. 
