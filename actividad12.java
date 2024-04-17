@@ -1,4 +1,4 @@
-package Actividad12;
+package actividad12;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -24,25 +24,25 @@ public class actividad12 {
             //Bubble Sort
             case 1:
                 System.out.println("\n");
-                conjunto = conjuntos();
+                burbuja();
                 System.out.println("\n");
                 break;
             //Selection Sort
             case 2:
                 System.out.println("\n");
-                conjunto = conjuntos();
+                seleccion();
                 System.out.println("\n");
                 break;
             //Insertion Sort
             case 3:
                 System.out.println("\n");
-                conjunto = conjuntos();
+                insercion();
                 System.out.println("\n");
                 break;
             //Shell Sort
             case 4:
                 System.out.println("\n");
-                conjunto = conjuntos();
+                shell();
                 System.out.println("\n");
                 break;
 
@@ -71,39 +71,387 @@ public class actividad12 {
     }
 
 
-    public static void algoritmo(){
+    public static void shell(){
 
-                 // Crear un arreglo de tamaño 1000 con números aleatorios
-                 int[] arr = generarArreglo(1000);
+        
+        int conjunto = conjuntos();
+    
+        int[] arr;
+        int[] arrShellSort;
+        long startTime, endTime, duration;
 
-                 // Clonar el arreglo para cada algoritmo
-                 int[] arrBubbleSort = arr.clone();
-                 int[] arrSelectionSort = arr.clone();
-                 int[] arrInsertionSort = arr.clone();
-                 int[] arrShellSort = arr.clone();
-         
+        
+    
+        switch (conjunto) {
+    
+            case 1:
+                arr = generarArreglo(10);
+                arrShellSort = arr.clone();
+                
+                // Mostrar el arreglo original
+                System.out.println("Arreglo original:");
+                imprimirArreglo(arr);
+
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+
+                // Aplicar el algoritmo de ordenamiento
+                selectionSort(arrShellSort);
+
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+
+            
+        
+                System.out.println("\nShell Sort:");
+                selectionSort(arrShellSort);
+                imprimirArreglo(arrShellSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+            case 2:
+                arr = generarArreglo(100);
+                arrShellSort = arr.clone();
+                
+                // Mostrar el arreglo original
+                System.out.println("Arreglo original:");
+                imprimirArreglo(arr);
+
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+
+                // Aplicar el algoritmo de ordenamiento
+                selectionSort(arrShellSort);
+
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+
+            
+        
+                System.out.println("\nShell Sort:");
+                selectionSort(arrShellSort);
+                imprimirArreglo(arrShellSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+            case 3:
+                arr = generarArreglo(1000);
+                arrShellSort = arr.clone();
+                
+                // Mostrar el arreglo original
+                System.out.println("Arreglo original:");
+                imprimirArreglo(arr);
+
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+
+                // Aplicar el algoritmo de ordenamiento
+                selectionSort(arrShellSort);
+
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+
+            
+        
+                System.out.println("\nShell Sort:");
+                selectionSort(arrShellSort);
+                imprimirArreglo(arrShellSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+        }
+
+    }
+
+
+    public static void insercion() {
+
+        int conjunto = conjuntos();
+    
+        int[] arr;
+        int[] arrInsertionSort;
+        long startTime, endTime, duration;
+
+        
+    
+        switch (conjunto) {
+    
+            case 1:
+                arr = generarArreglo(10);
+                arrInsertionSort = arr.clone();
+                
                  // Mostrar el arreglo original
                  System.out.println("Arreglo original:");
                  imprimirArreglo(arr);
-         
-                 // Aplicar cada algoritmo de ordenamiento y mostrar el resultado
-                 System.out.println("\nBubble Sort:");
-                 bubbleSort(arrBubbleSort);
-                 imprimirArreglo(arrBubbleSort);
-         
-                 System.out.println("\nSelection Sort:");
-                 selectionSort(arrSelectionSort);
-                 imprimirArreglo(arrSelectionSort);
-         
-                 System.out.println("\nInsertion Sort:");
-                 insertionSort(arrInsertionSort);
-                 imprimirArreglo(arrInsertionSort);
-         
-                 System.out.println("\nShell Sort:");
-                 shellSort(arrShellSort);
-                 imprimirArreglo(arrShellSort);
+    
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+    
+                // Aplicar el algoritmo de ordenamiento
+                selectionSort(arrInsertionSort);
+    
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+    
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
 
+               
+        
+                System.out.println("\nInsertion Sort:");
+                selectionSort(arrInsertionSort);
+                imprimirArreglo(arrInsertionSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+            case 2:
+                arr = generarArreglo(100);
+                arrInsertionSort = arr.clone();
+                
+                // Mostrar el arreglo original
+                System.out.println("Arreglo original:");
+                imprimirArreglo(arr);
+
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+
+                // Aplicar el algoritmo de ordenamiento
+                selectionSort(arrInsertionSort);
+
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+
+            
+        
+                System.out.println("\nInsertion Sort:");
+                selectionSort(arrInsertionSort);
+                imprimirArreglo(arrInsertionSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+            case 3:
+                arr = generarArreglo(1000);
+                arrInsertionSort = arr.clone();
+                
+                // Mostrar el arreglo original
+                System.out.println("Arreglo original:");
+                imprimirArreglo(arr);
+
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+
+                // Aplicar el algoritmo de ordenamiento
+                selectionSort(arrInsertionSort);
+
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+
+            
+        
+                System.out.println("\nInsertion Sort:");
+                selectionSort(arrInsertionSort);
+                imprimirArreglo(arrInsertionSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+        }
     }
+
+
+    
+    public static void seleccion() {
+
+        int conjunto = conjuntos();
+    
+        int[] arr;
+        int[] arrSelectionSort;
+        long startTime, endTime, duration;
+
+        
+    
+        switch (conjunto) {
+    
+            case 1:
+                arr = generarArreglo(10);
+                arrSelectionSort = arr.clone();
+                
+                 // Mostrar el arreglo original
+                 System.out.println("Arreglo original:");
+                 imprimirArreglo(arr);
+    
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+    
+                // Aplicar el algoritmo de ordenamiento
+                selectionSort(arrSelectionSort);
+    
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+    
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+
+               
+        
+                System.out.println("\nSelection Sort:");
+                selectionSort(arrSelectionSort);
+                imprimirArreglo(arrSelectionSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+            case 2:
+                arr = generarArreglo(100);
+                arrSelectionSort = arr.clone();
+                
+                // Mostrar el arreglo original
+                System.out.println("Arreglo original:");
+                imprimirArreglo(arr);
+
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+
+                // Aplicar el algoritmo de ordenamiento
+                selectionSort(arrSelectionSort);
+
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+
+            
+        
+                System.out.println("\nSelection Sort:");
+                selectionSort(arrSelectionSort);
+                imprimirArreglo(arrSelectionSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+            case 3:
+                arr = generarArreglo(1000);
+                arrSelectionSort = arr.clone();
+                
+                // Mostrar el arreglo original
+                System.out.println("Arreglo original:");
+                imprimirArreglo(arr);
+
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+
+                // Aplicar el algoritmo de ordenamiento
+                selectionSort(arrSelectionSort);
+
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+
+            
+        
+                System.out.println("\nSelection Sort:");
+                selectionSort(arrSelectionSort);
+                imprimirArreglo(arrSelectionSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+        }
+    }
+
+    public static void burbuja() {
+
+        int conjunto = conjuntos();
+    
+        int[] arr;
+        int[] arrBubbleSort;
+    
+        long startTime, endTime, duration;
+    
+        switch (conjunto) {
+    
+            case 1:
+                arr = generarArreglo(10);
+                arrBubbleSort = arr.clone();
+                // Mostrar el arreglo original
+                System.out.println("Arreglo original:");
+                imprimirArreglo(arr);
+    
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+    
+                // Aplicar el algoritmo de ordenamiento
+                bubbleSort(arrBubbleSort);
+    
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+    
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+    
+                // Mostrar el resultado y el tiempo de ejecución
+                System.out.println("\nBubble Sort:");
+                imprimirArreglo(arrBubbleSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+            case 2:
+                arr = generarArreglo(100);
+                arrBubbleSort = arr.clone();
+                // Mostrar el arreglo original
+                System.out.println("Arreglo original:");
+                imprimirArreglo(arr);
+    
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+    
+                // Aplicar el algoritmo de ordenamiento
+                bubbleSort(arrBubbleSort);
+    
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+    
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+    
+                // Mostrar el resultado y el tiempo de ejecución
+                System.out.println("\nBubble Sort:");
+                imprimirArreglo(arrBubbleSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+            case 3:
+                arr = generarArreglo(1000);
+                arrBubbleSort = arr.clone();
+                // Mostrar el arreglo original
+                System.out.println("Arreglo original:");
+                imprimirArreglo(arr);
+    
+                // Tomar el tiempo de inicio
+                startTime = System.currentTimeMillis();
+    
+                // Aplicar el algoritmo de ordenamiento
+                bubbleSort(arrBubbleSort);
+    
+                // Tomar el tiempo de finalización
+                endTime = System.currentTimeMillis();
+    
+                // Calcular la duración de la ejecución
+                duration = endTime - startTime;
+    
+                // Mostrar el resultado y el tiempo de ejecución
+                System.out.println("\nBubble Sort:");
+                imprimirArreglo(arrBubbleSort);
+                System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
+                break;
+        }
+    }
+    
+
+
 
 
     public static int[] generarArreglo(int size) {
