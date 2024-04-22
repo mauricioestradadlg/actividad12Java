@@ -96,7 +96,7 @@ public class actividad12 {
                 startTime = System.currentTimeMillis();
 
                 // Aplicar el algoritmo de ordenamiento
-                selectionSort(arrShellSort);
+                shellSort(arrShellSort);
 
                 // Tomar el tiempo de finalización
                 endTime = System.currentTimeMillis();
@@ -107,7 +107,7 @@ public class actividad12 {
             
         
                 System.out.println("\nShell Sort:");
-                selectionSort(arrShellSort);
+                shellSort(arrShellSort);
                 imprimirArreglo(arrShellSort);
                 System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
                 break;
@@ -123,7 +123,7 @@ public class actividad12 {
                 startTime = System.currentTimeMillis();
 
                 // Aplicar el algoritmo de ordenamiento
-                selectionSort(arrShellSort);
+                shellSort(arrShellSort);
 
                 // Tomar el tiempo de finalización
                 endTime = System.currentTimeMillis();
@@ -134,7 +134,7 @@ public class actividad12 {
             
         
                 System.out.println("\nShell Sort:");
-                selectionSort(arrShellSort);
+                shellSort(arrShellSort);
                 imprimirArreglo(arrShellSort);
                 System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
                 break;
@@ -150,7 +150,7 @@ public class actividad12 {
                 startTime = System.currentTimeMillis();
 
                 // Aplicar el algoritmo de ordenamiento
-                selectionSort(arrShellSort);
+                shellSort(arrShellSort);
 
                 // Tomar el tiempo de finalización
                 endTime = System.currentTimeMillis();
@@ -161,7 +161,7 @@ public class actividad12 {
             
         
                 System.out.println("\nShell Sort:");
-                selectionSort(arrShellSort);
+                shellSort(arrShellSort);
                 imprimirArreglo(arrShellSort);
                 System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
                 break;
@@ -194,7 +194,7 @@ public class actividad12 {
                 startTime = System.currentTimeMillis();
     
                 // Aplicar el algoritmo de ordenamiento
-                selectionSort(arrInsertionSort);
+                insertionSort(arrInsertionSort);
     
                 // Tomar el tiempo de finalización
                 endTime = System.currentTimeMillis();
@@ -205,7 +205,7 @@ public class actividad12 {
                
         
                 System.out.println("\nInsertion Sort:");
-                selectionSort(arrInsertionSort);
+                insertionSort(arrInsertionSort);
                 imprimirArreglo(arrInsertionSort);
                 System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
                 break;
@@ -221,7 +221,7 @@ public class actividad12 {
                 startTime = System.currentTimeMillis();
 
                 // Aplicar el algoritmo de ordenamiento
-                selectionSort(arrInsertionSort);
+                insertionSort(arrInsertionSort);
 
                 // Tomar el tiempo de finalización
                 endTime = System.currentTimeMillis();
@@ -232,7 +232,7 @@ public class actividad12 {
             
         
                 System.out.println("\nInsertion Sort:");
-                selectionSort(arrInsertionSort);
+                insertionSort(arrInsertionSort);
                 imprimirArreglo(arrInsertionSort);
                 System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
                 break;
@@ -248,7 +248,7 @@ public class actividad12 {
                 startTime = System.currentTimeMillis();
 
                 // Aplicar el algoritmo de ordenamiento
-                selectionSort(arrInsertionSort);
+                insertionSort(arrInsertionSort);
 
                 // Tomar el tiempo de finalización
                 endTime = System.currentTimeMillis();
@@ -259,7 +259,7 @@ public class actividad12 {
             
         
                 System.out.println("\nInsertion Sort:");
-                selectionSort(arrInsertionSort);
+                insertionSort(arrInsertionSort);
                 imprimirArreglo(arrInsertionSort);
                 System.out.println("Tiempo de ejecución: " + duration + " milisegundos");
                 break;
